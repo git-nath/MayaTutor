@@ -1,0 +1,8 @@
+<svg width="640" height="480" viewBox="0 0 640 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="480" rx="32" fill="#F8F4EE"/>
+  <path d="M160 200C208 160 256 160 304 200C352 240 400 240 448 200" stroke="#0B8A62" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="220" cy="250" r="46" fill="#F5C542"/>
+  <circle cx="324" cy="250" r="46" fill="#0B8A62"/>
+  <circle cx="428" cy="250" r="46" fill="#F5C542"/>
+  <text x="320" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#1E293B">Learning together</text>
+</svg>
