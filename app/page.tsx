@@ -1,6 +1,6 @@
 const navItems = ["Services", "Why Maya", "How It Works", "Cities", "For Tutors"];
 
-const navItems = ["Services", "Why Maya", "How It Works", "Cities", "For Tutors"];
+const navigationLinks = ["Services", "Why Maya", "How It Works", "Cities", "For Tutors"];
 
 const featureCards = [
   {
@@ -106,7 +106,7 @@ export default function HomePage() {
               </div>
 
               <nav className="hidden items-center gap-8 text-sm font-semibold text-white/85 lg:flex">
-                {navItems.map((item) => (
+                {navigationLinks.map((item) => (
                   <a key={item} href="#" className="transition hover:text-white">
                     {item}
                   </a>
