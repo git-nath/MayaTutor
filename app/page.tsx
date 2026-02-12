@@ -1,5 +1,11 @@
 const navigationLinks = ["Services", "Why Maya", "How It Works", "Cities", "For Tutors"];
 
+const trustBullets = [
+  "University & graduate tutors",
+  "Background-verified",
+  "Flexible schedules"
+];
+
 const featureCards = [
   {
     title: "Built for Ethiopian families",
@@ -129,28 +135,39 @@ export default function HomePage() {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(37,99,235,0.28),transparent_60%)]" />
             <div className="relative mx-auto max-w-4xl">
               <h1 className="text-4xl font-extrabold leading-tight sm:text-6xl">
-                Maya Tutor Ethiopia.
-                <br />
-                KG to Grade 12, done right.
+                Home Tutors for KG–Grade 12 in Ethiopia
               </h1>
               <p className="mx-auto mt-6 max-w-3xl text-base text-white/65 sm:text-xl sm:leading-relaxed">
-                University students teaching school students with agency quality, modern support, and beautiful
-                mobile-first experience.
+                Talk to a coordinator today and get matched in 24 hours.
               </p>
               <div className="mt-9 flex flex-wrap justify-center gap-3">
                 <a
                   href="#"
                   className="rounded-full bg-white px-7 py-3 text-base sm:px-9 sm:py-4 sm:text-2xl font-semibold text-black transition hover:bg-white/90"
                 >
-                  Find a Tutor →
+                  Chat on Telegram
                 </a>
                 <a
                   href="#"
                   className="rounded-full border border-white/20 bg-white/10 px-7 py-3 text-base sm:px-9 sm:py-4 sm:text-2xl font-semibold text-white"
                 >
-                  Become a Tutor
+                  Call Now
                 </a>
               </div>
+              <p className="mt-4 text-sm font-medium text-white/80 sm:text-base">Trusted by parents in Addis Ababa.</p>
+            </div>
+          </section>
+
+          <section className="border-x border-b border-white/10 px-4 py-10 sm:px-8">
+            <div className="mx-auto max-w-4xl rounded-2xl border border-white/10 bg-white/[0.03] p-6 sm:p-8">
+              <h2 className="text-xl font-bold sm:text-2xl">Why parents trust Maya Tutor</h2>
+              <ul className="mt-4 grid gap-3 sm:grid-cols-3">
+                {trustBullets.map((item) => (
+                  <li key={item} className="rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white/85 sm:text-base">
+                    • {item}
+                  </li>
+                ))}
+              </ul>
             </div>
           </section>
 
