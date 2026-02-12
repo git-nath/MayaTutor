@@ -1,4 +1,4 @@
-import Image from "next/image";
+const navItems = ["Services", "Why Maya", "How It Works", "Cities", "For Tutors"];
 
 const navigationLinks = ["Services", "Why Maya", "How It Works", "Cities", "For Tutors"];
 
