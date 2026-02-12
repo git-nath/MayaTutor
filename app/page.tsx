@@ -1,5 +1,7 @@
 const navItems = ["Services", "Why Maya", "How It Works", "Cities", "For Tutors"];
 
+const navItems = ["Services", "Why Maya", "How It Works", "Cities", "For Tutors"];
+
 const featureCards = [
   {
     title: "Built for Ethiopian families",
@@ -100,8 +102,7 @@ export default function HomePage() {
           <header className="sticky top-3 z-20 rounded-2xl border border-white/10 bg-black/70 px-4 py-3 backdrop-blur-xl">
             <div className="flex items-center justify-between gap-4">
               <div className="flex items-center gap-3">
-                <div className="rounded-md bg-white px-2 py-1 text-lg font-black text-black">e_</div>
-                <p className="text-xl font-bold tracking-tight">maya tutor</p>
+                <Image src="/maya-logo.svg" alt="Maya Tutor logo" width={220} height={56} className="h-10 w-auto rounded-md bg-white p-1" priority />
               </div>
 
               <nav className="hidden items-center gap-8 text-sm font-semibold text-white/85 lg:flex">
@@ -225,7 +226,7 @@ export default function HomePage() {
           <footer className="border-x border-b border-white/10 px-4 py-16 sm:px-8">
             <div className="grid gap-10 md:grid-cols-[1.5fr_3fr]">
               <div>
-                <h3 className="text-3xl font-extrabold sm:text-5xl">maya tutor</h3>
+                <Image src="/maya-logo.svg" alt="Maya Tutor logo" width={300} height={76} className="h-14 w-auto rounded-lg bg-white p-1" />
                 <p className="mt-4 max-w-md text-base leading-7 text-white/65 sm:text-2xl sm:leading-9">
                   The modern tutoring agency in Ethiopia connecting university students with KG to Grade 12 learners.
                 </p>
