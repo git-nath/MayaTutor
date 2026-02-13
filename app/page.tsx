@@ -277,16 +277,21 @@ export default function HomePage() {
           target="_blank"
           rel="noreferrer"
           aria-label="Chat on Telegram"
-          className="flex h-14 w-14 items-center justify-center rounded-full border border-white/20 bg-slate-900/90 text-xl text-white shadow-lg shadow-black/40 backdrop-blur transition hover:-translate-y-0.5 hover:bg-slate-800"
+          className="flex h-14 w-14 items-center justify-center rounded-full border border-white/20 bg-slate-900/90 text-xl text-white shadow-lg shadow-black/40 backdrop-blur transition hover:-translate-y-0.5 hover:bg-slate-800 hover:scale-105"
         >
-          ✈
+          <svg aria-hidden="true" viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M22 2L11 13" />
+            <path d="M22 2L15 22L11 13L2 9L22 2Z" />
+          </svg>
         </a>
         <a
           href="tel:+251982614129"
           aria-label="Call +251982614129"
-          className="flex h-14 w-14 items-center justify-center rounded-full border border-white/20 bg-slate-900/90 text-xl text-white shadow-lg shadow-black/40 backdrop-blur transition hover:-translate-y-0.5 hover:bg-slate-800"
+          className="flex h-14 w-14 items-center justify-center rounded-full border border-white/20 bg-slate-900/90 text-xl text-white shadow-lg shadow-black/40 backdrop-blur transition hover:-translate-y-0.5 hover:bg-slate-800 hover:scale-105"
         >
-          ☎
+          <svg aria-hidden="true" viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M22 16.92V20a2 2 0 0 1-2.18 2A19.86 19.86 0 0 1 3 5.18 2 2 0 0 1 5 3h3.09a2 2 0 0 1 2 1.72c.12.89.32 1.76.59 2.6a2 2 0 0 1-.45 2.11L9.09 10.6a16 16 0 0 0 4.31 4.31l1.17-1.17a2 2 0 0 1 2.11-.45c.84.27 1.71.47 2.6.59A2 2 0 0 1 22 16.92Z" />
+          </svg>
         </a>
       </div>
     </main>
