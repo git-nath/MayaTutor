@@ -142,13 +142,15 @@ export default function HomePage() {
               </p>
               <div className="mt-9 flex flex-wrap justify-center gap-3">
                 <a
-                  href="#"
+                  href="https://t.me/cjimllbethel"
+                  target="_blank"
+                  rel="noreferrer"
                   className="rounded-full bg-white px-7 py-3 text-base sm:px-9 sm:py-4 sm:text-2xl font-semibold text-black transition hover:bg-white/90"
                 >
                   Chat on Telegram
                 </a>
                 <a
-                  href="#"
+                  href="tel:+251982614129"
                   className="rounded-full border border-white/20 bg-white/10 px-7 py-3 text-base sm:px-9 sm:py-4 sm:text-2xl font-semibold text-white"
                 >
                   Call Now
