@@ -140,6 +140,18 @@ export default function HomePage() {
               <div className="flex items-center gap-2">
                 <button
                   type="button"
+                  aria-label={isDayMode ? "Switch to night mode" : "Switch to day mode"}
+                  onClick={toggleTheme}
+                  className={`inline-flex h-9 w-9 items-center justify-center rounded-xl border text-sm sm:hidden ${
+                    isDayMode
+                      ? "border-slate-300 bg-white text-slate-800"
+                      : "border-white/25 bg-white/10 text-white/90"
+                  }`}
+                >
+                  {isDayMode ? "🌙" : "☀"}
+                </button>
+                <button
+                  type="button"
                   onClick={toggleTheme}
                   className={`hidden rounded-xl border px-3 py-2 text-sm font-semibold sm:block ${
                     isDayMode
