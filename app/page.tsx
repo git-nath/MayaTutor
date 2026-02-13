@@ -58,28 +58,18 @@ const serviceCards = [
   }
 ];
 
-const pricing = [
+const communityCards = [
   {
-    name: "Starter",
-    price: "Custom",
-    subtitle: "For occasional tutoring",
-    points: [
-      "KG–Grade 12 subject matching",
-      "Weekly or weekend options",
-      "Online or home sessions",
-      "Parent support line"
-    ]
+    title: "Join as a Student",
+    description: "Start your journey to academic excellence with personalized tutoring",
+    points: ["One-on-one sessions", "Flexible scheduling", "Progress tracking", "All subjects K-12"],
+    cta: "Enroll Now"
   },
   {
-    name: "Intensive",
-    price: "Custom",
-    subtitle: "For exam and high-impact prep",
-    points: [
-      "Everything in Starter",
-      "Priority tutor assignment",
-      "Progress report every month",
-      "Exam timetable planning"
-    ]
+    title: "Become a Tutor",
+    description: "Share your expertise and make a difference in students' lives",
+    points: ["Competitive pay", "Flexible hours", "Professional development", "Supportive community"],
+    cta: "Apply Today"
   }
 ];
 
@@ -178,7 +168,7 @@ export default function HomePage() {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(37,99,235,0.28),transparent_60%)]" />
             <div className="relative mx-auto max-w-4xl">
               <h1 className="text-4xl font-extrabold leading-tight sm:text-6xl">
-                Maya Home Tutors for KG–Grade 12 in Ethiopia
+                Maya Home Tutors  KG To Grade 12 in Ethiopia
               </h1>
               <p className="mx-auto mt-6 max-w-3xl text-base text-white/65 sm:text-xl sm:leading-relaxed">
                 Talk to a coordinator today and get matched in 24 hours.
@@ -262,27 +252,34 @@ export default function HomePage() {
           </section>
 
           <section className="border-x border-b border-white/10 px-4 py-20 text-center sm:px-8">
-            <h2 className="text-3xl font-extrabold sm:text-6xl">Simple pricing</h2>
-            <p className="mt-4 text-lg text-white/65 sm:text-4xl">Start with what you need. Upgrade when you want more support.</p>
+            <h2 className="text-3xl font-extrabold sm:text-6xl">Join Our Learning Community</h2>
+            <p className="mt-4 text-lg text-white/65 sm:text-4xl">
+              Whether you're seeking tutoring or want to become a tutor, we'd love to have you
+            </p>
             <div className="mx-auto mt-12 grid max-w-4xl gap-6 md:grid-cols-2">
-              {pricing.map((plan, i) => (
+              {communityCards.map((card, i) => (
                 <article
-                  key={plan.name}
+                  key={card.title}
                   className={`rounded-3xl border p-8 text-left ${
                     i === 1 ? "border-white/20 bg-white/[0.07]" : "border-white/10 bg-black/60"
                   }`}
                 >
-                  <h3 className="text-2xl font-bold sm:text-4xl">{plan.name}</h3>
-                  <p className="mt-2 text-4xl font-black sm:text-6xl">{plan.price}</p>
-                  <p className="mt-1 text-base text-white/60 sm:text-2xl">{plan.subtitle}</p>
-                  <ul className="mt-6 space-y-3 text-base sm:text-2xl text-white/85">
-                    {plan.points.map((point) => (
+                  <h3 className="text-2xl font-bold sm:text-4xl">{card.title}</h3>
+                  <p className="mt-3 text-base text-white/60 sm:text-2xl">{card.description}</p>
+                  <ul className="mt-6 space-y-3 text-base text-white/85 sm:text-2xl">
+                    {card.points.map((point) => (
                       <li key={point} className="flex items-start gap-3">
                         <span className="text-emerald-400">✓</span>
                         <span>{point}</span>
                       </li>
                     ))}
                   </ul>
+                  <a
+                    href="#"
+                    className="mt-7 inline-flex rounded-full bg-white px-5 py-2 text-sm font-semibold text-black hover:bg-white/90 sm:px-7 sm:py-3 sm:text-base"
+                  >
+                    {card.cta}
+                  </a>
                 </article>
               ))}
             </div>
