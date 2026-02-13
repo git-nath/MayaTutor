@@ -145,13 +145,18 @@ export default function HomePage() {
                   href="https://t.me/cjimllbethel"
                   target="_blank"
                   rel="noreferrer"
-                  className="rounded-full bg-white px-7 py-3 text-base sm:px-9 sm:py-4 sm:text-2xl font-semibold text-black transition hover:bg-white/90"
+                  className="inline-flex h-12 min-w-[220px] items-center justify-center gap-2 rounded-full bg-white px-5 text-base font-semibold text-black transition hover:bg-white/90 sm:h-14 sm:min-w-[240px] sm:text-lg"
                 >
+                  <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-[#229ED9] text-white sm:h-8 sm:w-8">
+                    <svg aria-hidden="true" viewBox="0 0 24 24" className="h-4 w-4" fill="currentColor">
+                      <path d="M9.04 15.47 8.9 19.54c.39 0 .56-.17.77-.37l1.86-1.78 3.86 2.82c.7.4 1.2.19 1.39-.65l2.52-11.8.01-.01c.22-1.02-.37-1.42-1.05-1.17L3.45 12.3c-.98.39-.97.93-.16 1.18l3.79 1.18L15.88 9c.41-.27.79-.12.48.15"/>
+                    </svg>
+                  </span>
                   Chat on Telegram
                 </a>
                 <a
                   href="tel:+251982614129"
-                  className="rounded-full border border-[#f4ad62]/70 bg-[#f4ad62] px-7 py-3 text-base font-semibold text-black sm:px-9 sm:py-4 sm:text-2xl"
+                  className="inline-flex h-12 min-w-[220px] items-center justify-center gap-2 rounded-full border border-[#f4ad62]/70 bg-[#f4ad62] px-5 text-base font-semibold text-black sm:h-14 sm:min-w-[240px] sm:text-lg"
                 >
                   📞 +251982614129
                 </a>
@@ -277,12 +282,13 @@ export default function HomePage() {
           target="_blank"
           rel="noreferrer"
           aria-label="Chat on Telegram"
-          className="flex h-14 w-14 items-center justify-center rounded-full border border-white/20 bg-slate-900/90 text-xl text-white shadow-lg shadow-black/40 backdrop-blur transition hover:-translate-y-0.5 hover:bg-slate-800 hover:scale-105"
+          className="flex h-14 w-14 items-center justify-center rounded-full border border-white/20 bg-slate-900/90 text-white shadow-lg shadow-black/40 backdrop-blur transition hover:-translate-y-0.5 hover:bg-slate-800 hover:scale-105"
         >
-          <svg aria-hidden="true" viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M22 2L11 13" />
-            <path d="M22 2L15 22L11 13L2 9L22 2Z" />
-          </svg>
+          <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#229ED9] text-white">
+            <svg aria-hidden="true" viewBox="0 0 24 24" className="h-4 w-4" fill="currentColor">
+              <path d="M9.04 15.47 8.9 19.54c.39 0 .56-.17.77-.37l1.86-1.78 3.86 2.82c.7.4 1.2.19 1.39-.65l2.52-11.8.01-.01c.22-1.02-.37-1.42-1.05-1.17L3.45 12.3c-.98.39-.97.93-.16 1.18l3.79 1.18L15.88 9c.41-.27.79-.12.48.15"/>
+            </svg>
+          </span>
         </a>
         <a
           href="tel:+251982614129"
