@@ -60,16 +60,12 @@ const serviceCards = [
 
 const communityCards = [
   {
-    title: "Join as a Student",
-    description: "Start your journey to academic excellence with personalized tutoring",
-    points: ["One-on-one sessions", "Flexible scheduling", "Progress tracking", "All subjects K-12"],
-    cta: "Enroll Now"
+    title: "Find a Tutor",
+    description: "You are looking for a teacher to help you (or your child)."
   },
   {
     title: "Become a Tutor",
-    description: "Share your expertise and make a difference in students' lives",
-    points: ["Competitive pay", "Flexible hours", "Professional development", "Supportive community"],
-    cta: "Apply Today"
+    description: "You want to work as a tutor and teach students."
   }
 ];
 
@@ -265,23 +261,17 @@ export default function HomePage() {
                   }`}
                 >
                   <h3 className="text-2xl font-bold sm:text-4xl">{card.title}</h3>
-                  <p className="mt-3 text-base text-white/60 sm:text-2xl">{card.description}</p>
-                  <ul className="mt-6 space-y-3 text-base text-white/85 sm:text-2xl">
-                    {card.points.map((point) => (
-                      <li key={point} className="flex items-start gap-3">
-                        <span className="text-emerald-400">✓</span>
-                        <span>{point}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <a
-                    href="#"
-                    className="mt-7 inline-flex rounded-full bg-white px-5 py-2 text-sm font-semibold text-black hover:bg-white/90 sm:px-7 sm:py-3 sm:text-base"
-                  >
-                    {card.cta}
-                  </a>
+                  <p className="mt-3 text-base leading-7 text-white/70 sm:text-2xl sm:leading-9">{card.description}</p>
                 </article>
               ))}
+            </div>
+            <div className="mt-8">
+              <a
+                href="#"
+                className="inline-flex rounded-full bg-white px-6 py-2 text-sm font-semibold text-black transition hover:bg-white/90 sm:px-8 sm:py-3 sm:text-base"
+              >
+                Contact Us
+              </a>
             </div>
           </section>
 
