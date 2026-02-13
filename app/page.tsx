@@ -9,15 +9,15 @@ const trustBullets = [
 const featureCards = [
   {
     title: "Built for Ethiopian families",
-    text: "We connect KG to Grade 12 students with trusted university tutors for home and online classes."
+    text: "We connect KG to Grade 12 students with trusted university tutors for home and online lessons."
   },
   {
-    title: "Simple and transparent",
-    text: "Tell us your subject and schedule. We match, verify, and support your tutor journey end-to-end."
+    title: "Simple coordination",
+    text: "You tell us the subject, grade, and schedule. We handle tutor matching, verification, and follow-up."
   },
   {
-    title: "Pay only for sessions",
-    text: "Affordable rates, flexible plans, and agency support with no hidden subscription complexity."
+    title: "Flexible, negotiated pricing",
+    text: "Rates are discussed based on subject, level, and schedule."
   }
 ];
 
