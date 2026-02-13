@@ -135,7 +135,7 @@ export default function HomePage() {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(37,99,235,0.28),transparent_60%)]" />
             <div className="relative mx-auto max-w-4xl">
               <h1 className="text-4xl font-extrabold leading-tight sm:text-6xl">
-                Maya Home Tutors for KG–Grade 12 in Ethiopia
+                Maya Home Tutors KG To Grade 12 in Ethiopia
               </h1>
               <p className="mx-auto mt-6 max-w-3xl text-base text-white/65 sm:text-xl sm:leading-relaxed">
                 Talk to a coordinator today and get matched in 24 hours.
