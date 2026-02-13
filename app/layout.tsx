@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Maya Tutor | Ethiopia",
@@ -16,7 +14,20 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>
+        <Script id="maya-theme-init" strategy="beforeInteractive">
+          {`(() => {
+            try {
+              const savedTheme = localStorage.getItem('maya-theme');
+              const useDay = savedTheme === 'day';
+              document.documentElement.classList.toggle('day-mode', useDay);
+            } catch (_) {
+              document.documentElement.classList.remove('day-mode');
+            }
+          })();`}
+        </Script>
+        {children}
+      </body>
     </html>
   );
 }
