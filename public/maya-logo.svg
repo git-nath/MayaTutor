@@ -1,0 +1,16 @@
+<svg width="720" height="180" viewBox="0 0 720 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="180" rx="18" fill="white"/>
+  <g transform="translate(18 24)">
+    <path d="M88 10L138 30L88 48L38 30L88 10Z" fill="#20232A"/>
+    <circle cx="88" cy="72" r="18" fill="#2B2F38"/>
+    <path d="M48 96C56 76 70 70 88 70C106 70 120 76 128 96" stroke="#2B2F38" stroke-width="14" stroke-linecap="round"/>
+    <path d="M24 112C34 84 58 68 88 68C118 68 142 84 152 112" stroke="#0E4C8A" stroke-width="8"/>
+    <path d="M24 112C44 94 66 88 88 88" stroke="#3FB950" stroke-width="8"/>
+    <path d="M152 112C132 94 110 88 88 88" stroke="#F59E0B" stroke-width="8"/>
+    <path d="M20 122C48 118 72 122 88 132C104 122 128 118 156 122" stroke="#0E4C8A" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <text x="200" y="92" font-size="74" font-family="Arial, Helvetica, sans-serif" font-weight="700">
+    <tspan fill="#0E4C8A">Maya</tspan><tspan fill="#F04A1D">Tutor</tspan>
+  </text>
+  <text x="206" y="136" font-size="30" font-family="Arial, Helvetica, sans-serif" letter-spacing="4" fill="#555">LEARN • ACHIEVE • SUCCEED</text>
+</svg>
