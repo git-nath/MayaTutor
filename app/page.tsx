@@ -118,14 +118,14 @@ export default function HomePage() {
               </nav>
 
               <div className="flex items-center gap-2">
-                <a href="#" className="hidden px-3 text-sm font-semibold text-white/90 sm:block">
-                  Sign In
-                </a>
+                <button type="button" className="hidden rounded-xl border border-white/25 bg-white/10 px-3 py-2 text-sm font-semibold text-white/90 sm:block">
+                  ☀ Day Mode
+                </button>
                 <a
-                  href="#"
-                  className="rounded-xl border border-cyan-400/40 bg-cyan-500/10 px-4 py-2 text-sm font-semibold text-cyan-100"
+                  href="tel:+251982614129"
+                  className="rounded-xl border border-[#f4ad62]/60 bg-[#f4ad62] px-4 py-2 text-sm font-semibold text-black"
                 >
-                  Start Free
+                  📞 +251982614129
                 </a>
               </div>
             </div>
@@ -151,9 +151,9 @@ export default function HomePage() {
                 </a>
                 <a
                   href="tel:+251982614129"
-                  className="rounded-full border border-white/20 bg-white/10 px-7 py-3 text-base sm:px-9 sm:py-4 sm:text-2xl font-semibold text-white"
+                  className="rounded-full border border-[#f4ad62]/70 bg-[#f4ad62] px-7 py-3 text-base font-semibold text-black sm:px-9 sm:py-4 sm:text-2xl"
                 >
-                  Call Now
+                  📞 +251982614129
                 </a>
               </div>
               <p className="mt-4 text-sm font-medium text-white/80 sm:text-base">Trusted by parents in Addis Ababa.</p>
@@ -187,7 +187,7 @@ export default function HomePage() {
               href="#"
               className="inline-flex rounded-full bg-white px-8 py-4 text-lg sm:px-14 sm:py-5 sm:text-4xl font-semibold text-black shadow-[0_0_60px_rgba(255,255,255,0.22)]"
             >
-              Start Learning Today →
+              Contact Maya Tutor
             </a>
           </section>
 
@@ -269,6 +269,25 @@ export default function HomePage() {
             </div>
           </footer>
         </div>
+      </div>
+
+      <div className="fixed bottom-6 right-4 z-30 flex flex-col gap-3 sm:right-6">
+        <a
+          href="https://t.me/cjimllbethel"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Chat on Telegram"
+          className="flex h-14 w-14 items-center justify-center rounded-full border border-white/20 bg-slate-900/90 text-xl text-white shadow-lg shadow-black/40 backdrop-blur transition hover:-translate-y-0.5 hover:bg-slate-800"
+        >
+          ✈
+        </a>
+        <a
+          href="tel:+251982614129"
+          aria-label="Call +251982614129"
+          className="flex h-14 w-14 items-center justify-center rounded-full border border-white/20 bg-slate-900/90 text-xl text-white shadow-lg shadow-black/40 backdrop-blur transition hover:-translate-y-0.5 hover:bg-slate-800"
+        >
+          ☎
+        </a>
       </div>
     </main>
   );
