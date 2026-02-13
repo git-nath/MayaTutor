@@ -103,24 +103,27 @@ const footerColumns = [
 ];
 
 export default function HomePage() {
-  const [isDayMode, setIsDayMode] = useState(false);
+  const [theme, setTheme] = useState<"dark" | "day">("dark");
 
   useEffect(() => {
-    const savedTheme = window.localStorage.getItem("maya-theme");
-    const shouldUseDayMode = savedTheme === "day";
-    setIsDayMode(shouldUseDayMode);
-    document.documentElement.classList.toggle("day-mode", shouldUseDayMode);
+    const isDayMode = document.documentElement.classList.contains("day-mode");
+    setTheme(isDayMode ? "day" : "dark");
   }, []);
 
+  useEffect(() => {
+    const isDayMode = theme === "day";
+    document.documentElement.classList.toggle("day-mode", isDayMode);
+    window.localStorage.setItem("maya-theme", isDayMode ? "day" : "dark");
+  }, [theme]);
+
+  const isDayMode = theme === "day";
+
   const toggleTheme = () => {
-    const nextMode = !isDayMode;
-    setIsDayMode(nextMode);
-    document.documentElement.classList.toggle("day-mode", nextMode);
-    window.localStorage.setItem("maya-theme", nextMode ? "day" : "dark");
+    setTheme((currentTheme) => (currentTheme === "day" ? "dark" : "day"));
   };
 
   return (
-    <main className={`min-h-screen transition-colors ${isDayMode ? "bg-slate-100 text-slate-900" : "bg-[#04070d] text-white"}`}>
+    <main className={`min-h-screen ${isDayMode ? "bg-slate-100 text-slate-900" : "bg-[#04070d] text-white"}`}>
       <div className="maya-grid-bg">
         <div className="mx-auto max-w-6xl px-4 pb-16 pt-4 sm:px-6 lg:px-8">
           <header className="sticky top-3 z-20 rounded-2xl border border-white/10 bg-black/70 px-4 py-3 backdrop-blur-xl">
@@ -142,7 +145,7 @@ export default function HomePage() {
                   type="button"
                   aria-label={isDayMode ? "Switch to night mode" : "Switch to day mode"}
                   onClick={toggleTheme}
-                  className={`inline-flex h-9 w-9 items-center justify-center rounded-xl border text-sm sm:hidden ${
+                  className={`inline-flex h-9 w-9 touch-manipulation items-center justify-center rounded-xl border text-sm sm:hidden ${
                     isDayMode
                       ? "border-slate-300 bg-white text-slate-800"
                       : "border-white/25 bg-white/10 text-white/90"

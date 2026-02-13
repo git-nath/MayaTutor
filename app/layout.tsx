@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -13,7 +14,20 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Script id="maya-theme-init" strategy="beforeInteractive">
+          {`(() => {
+            try {
+              const savedTheme = localStorage.getItem('maya-theme');
+              const useDay = savedTheme === 'day';
+              document.documentElement.classList.toggle('day-mode', useDay);
+            } catch (_) {
+              document.documentElement.classList.remove('day-mode');
+            }
+          })();`}
+        </Script>
+        {children}
+      </body>
     </html>
   );
 }
